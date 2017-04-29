@@ -1,6 +1,6 @@
 # Codeninja iCal library
 
-This package offers a abstraction layer for creating .ics files. The output will be generated according [RFC 5545] .
+This library offers a abstraction layer for creating iCal Calendars and .ics files. The output will be generated according [RFC 5545] .
 
 The following types are currently supported:
 
