@@ -34,7 +34,7 @@ $myEvent->setDtEnd(new \DateTime());
 $myEvent->setisAllDay(true);
 
 $myEvent->setSummary('Summary: Lorem Ipsum');
-$myEvent->setDescription('Lorem Ipsum is simply dummy text of the printing and typesetting industry.');'
+$myEvent->setDescription('Lorem Ipsum is simply dummy text of the printing and typesetting industry.');
 ```
 
 #### Add event to calendar object
@@ -73,5 +73,5 @@ DTSTART:20170101T180000
 
 ## License
 
-This software is distributed under the MIT license license. Please read LICENSE for information on the
+This software is distributed under the MIT license. Please read LICENSE for information on the
 software availability and distribution.

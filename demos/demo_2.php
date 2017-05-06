@@ -33,6 +33,10 @@ $firstEvent->setDescription('Lorem Ipsum is simply dummy text of the printing an
 //Location informations (optional)
 $firstEvent->setLocation("Frankfurt Airport (FRA)\n Frankfurt DE 60547");
 
+// Adding Timezone (optional)
+$firstEvent->setUseTimezone(true);
+$firstEvent->setTimezoneString("Europe/London");
+
 // 5. Add event to calendar object
 $calendar->addEvent($firstEvent);
 
@@ -48,7 +52,7 @@ if($_GET['isDownload'] == true)
 } else {
 ?>
 
-<h1>Codeninja iCal Demo 1:</h1>
+<h1>Codeninja iCal Demo 2 with Timezone:</h1>
 
 <p>	This is a small demonstration of how you could use the iCal library to generate a iCal file within you project. </p>
 <p>
