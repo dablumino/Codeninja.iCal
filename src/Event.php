@@ -55,6 +55,11 @@ class Event extends Component
 	/**
 	* @var \DateTime
 	*/
+	protected $created;
+	
+	/**
+	* @var \DateTime
+	*/
 	protected $dtStart;
 	
 	/**
@@ -95,6 +100,13 @@ class Event extends Component
 	* @var string
 	*/
 	protected $transparency = self::TIME_TRANSPARENCY_OPAQUE;
+	
+	/**
+	* If set to true the time input will be in UTC.
+	*
+	* @var bool
+	*/
+	protected $useUtc = false;
 	
 	/**
 	* If set to true the timezone will be added to the event.
@@ -138,8 +150,14 @@ class Event extends Component
 	*/
 	protected $description;
 	
+	/**
+	* @var bool
+	*/
+	protected $isPrivate;
+	
 	public function __construct()
-	{ }
+	{
+	}
 	
 	/**
 	* @param $uniqueId
@@ -250,6 +268,17 @@ class Event extends Component
 	public function setUrl($url)
 	{
 		$this->url = $url;
+		return $this;
+	}
+	
+	/**
+	* @param $useUtc
+	*
+	* @return $this
+	*/
+	public function setUseUtc($useUtc)
+	{
+		$this->useUtc = $useUtc;
 		return $this;
 	}
 	
